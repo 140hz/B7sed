@@ -1,0 +1,97 @@
+@font-face {
+    font-family: hangul;
+    src: url(/fonts/vtf_hngl-webfont.ttf);
+}
+:root{
+    --primario: #464d70;
+    --secundario: #757575;
+    --alternativo: #a1ac88;
+    --negro: #000000;
+    --blanco: white;
+}
+
+html{
+    font-family: hangul;
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+
+/* globales */
+
+body{
+    background-color: var(--primario);
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+
+p{
+    font-size: 1.8rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--blanco);
+}
+a{
+    text-decoration: none;
+}
+img{
+    max-width: 100%;
+}
+.contenedor{
+    max-width: 120rem;
+    margin: 0 auto;
+}
+h1,h2,h3{
+    text-align: center;
+    color: var(--secundario);
+    font-family: hangul;
+}
+h1{
+    font-size: 4rem;
+    color: var(--blanco);
+}
+h2{
+    font-size: 3.2rem;
+}
+h3{
+    font-size: 2.4rem;
+}
+
+/*header*/
+
+.header{
+    display: flex;
+    justify-content: center;
+}
+.header__logo{
+
+    margin: 3rem 0;
+}
+/*footer*/
+footer{
+    background-color: var(--primario);
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+footer__text{
+    text-align: center;
+    font-size: 2.2rem;
+}
+/* navegacion*/
+.nav{
+    background-color: var(--secundario);
+    padding: 1rem 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+.nav__enlace{
+    color: var(--blanco);
+    font-size: 4rem;
+}
+
+.nav__enlace--activo,
+.nav__enlace:hover{
+    color: var(--alternativo);
+}
