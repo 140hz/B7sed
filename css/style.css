@@ -84,14 +84,30 @@ footer__text{
     padding: 1rem 0;
     display: flex;
     justify-content: center;
-    gap: 2rem;
+    gap: 2rem; /* separacion forma nueva*/
+
 }
 .nav__enlace{
     color: var(--blanco);
     font-size: 4rem;
 }
-
 .nav__enlace--activo,
 .nav__enlace:hover{
     color: var(--alternativo);
+}
+/* producots*/
+.producto{
+
+}
+.producto__imagen{
+
+}
+.producto__informacion{
+
+}
+.producto__nombre{
+
+}
+.producto__precio{
+    
 }
